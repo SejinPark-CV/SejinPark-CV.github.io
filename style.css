@@ -6,9 +6,9 @@
   --text: #292621;
   --subtext: #71695f;
 
-  --accent: #9a7b58;
-  --accent-dark: #745a3d;
-  --accent-light: #e3d3bf;
+  --accent: #a57668;
+  --accent-dark: #8a5a4a;
+  --accent-light: #e5c9c0;
 
   --border: #e5dcd0;
 
@@ -28,6 +28,7 @@ html {
 
 body {
   margin: 0;
+
   background: var(--bg);
   color: var(--text);
 
@@ -84,8 +85,10 @@ nav {
 
 nav a {
   color: var(--subtext);
+
   font-size: 14px;
   font-weight: 500;
+
   transition: color 0.18s ease;
 }
 
@@ -95,7 +98,9 @@ nav a:hover {
 
 .nav-cv {
   padding: 7px 14px;
+
   background: var(--surface);
+
   border: 1px solid var(--accent-light);
   border-radius: 999px;
 }
@@ -105,11 +110,13 @@ nav a:hover {
 
 .hero {
   margin-top: 45px;
+
   padding: 40px 44px;
 
   display: grid;
   grid-template-columns: 145px 1fr;
   gap: 37px;
+
   align-items: center;
 
   background: var(--surface);
@@ -118,6 +125,10 @@ nav a:hover {
   border-radius: 20px;
 
   box-shadow: var(--shadow);
+}
+
+.profile-photo {
+  width: 145px;
 }
 
 .profile-photo img {
@@ -132,6 +143,8 @@ nav a:hover {
   border-radius: 14px;
 
   border: 1px solid var(--border);
+
+  background: white;
 }
 
 .eyebrow {
@@ -166,6 +179,7 @@ nav a:hover {
 .research-tags {
   display: flex;
   gap: 8px;
+
   flex-wrap: wrap;
 
   margin: 17px 0;
@@ -174,7 +188,7 @@ nav a:hover {
 .research-tags span {
   padding: 5px 11px;
 
-  background: var(--surface-soft);
+  background: #f3e4df;
 
   border: 1px solid var(--accent-light);
   border-radius: 999px;
@@ -223,7 +237,7 @@ nav a:hover {
 }
 
 .profile-links a:hover {
-  background: var(--surface-soft);
+  background: #f5e8e4;
   border-color: var(--accent-light);
 }
 
@@ -261,13 +275,12 @@ nav a:hover {
 .research-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   gap: 17px;
 }
 
 .research-card {
   padding: 25px;
-
-  position: relative;
 
   background: var(--surface);
 
@@ -289,7 +302,7 @@ nav a:hover {
 .research-index {
   margin-bottom: 15px;
 
-  color: var(--accent);
+  color: var(--accent-dark);
 
   font-size: 11px;
   font-weight: 750;
@@ -313,36 +326,48 @@ nav a:hover {
 /* ================= PUBLICATIONS ================= */
 
 .publication {
-  padding: 27px 0;
+  display: grid;
+
+  grid-template-columns: minmax(260px, 320px) 1fr;
+
+  gap: 32px;
+
+  align-items: center;
+
+  padding: 30px 0;
 
   border-bottom: 1px solid var(--border);
 }
 
-.publication:last-child {
+.publication:last-of-type {
   border-bottom: none;
 }
 
-.pub-with-image {
-  display: grid;
 
-  grid-template-columns: 220px 1fr;
-
-  gap: 29px;
-
-  align-items: center;
-}
+/* publication image container */
 
 .pub-image {
-  width: 220px;
-  height: 145px;
+  width: 100%;
+
+  aspect-ratio: 16 / 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   overflow: hidden;
 
-  background: white;
+  padding: 8px;
+
+  background: #ffffff;
 
   border: 1px solid var(--border);
   border-radius: 13px;
 }
+
+
+/* IMPORTANT:
+   contain means wide/tall figures keep their own ratio */
 
 .pub-image img {
   display: block;
@@ -350,29 +375,56 @@ nav a:hover {
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
+
+
+/* year + BK21 */
 
 .pub-topline {
   display: flex;
+
   align-items: center;
   flex-wrap: wrap;
 
-  gap: 9px;
+  gap: 15px;
 
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .pub-year {
-  color: var(--accent-dark);
+  color: #925848;
 
   font-size: 13px;
+  font-weight: 750;
+
+  letter-spacing: 0.01em;
+}
+
+.bk21-badge {
+  display: inline-block;
+
+  padding: 4px 9px;
+
+  background: #f5e1dc;
+
+  border: 1px solid #e6c4bb;
+  border-radius: 999px;
+
+  color: #925848;
+
+  font-size: 10.5px;
   font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.pub-content {
+  min-width: 0;
 }
 
 .pub-content h3 {
-  max-width: 780px;
-
   margin: 0 0 7px;
 
   font-size: 18px;
@@ -380,7 +432,7 @@ nav a:hover {
 }
 
 .authors {
-  margin: 0 0 3px;
+  margin: 0 0 9px;
 
   color: var(--subtext);
 
@@ -399,26 +451,12 @@ nav a:hover {
   font-size: 13.5px;
 }
 
-.bk21-badge {
-  display: inline-block;
-
-  padding: 3px 8px;
-
-  background: var(--surface-soft);
-
-  border: 1px solid var(--accent-light);
-  border-radius: 999px;
-
-  color: var(--accent-dark);
-
-  font-size: 10.5px;
-  font-weight: 700;
-
-  white-space: nowrap;
+.venue strong {
+  color: #5f5550;
 }
 
 .equal {
-  margin: 4px 0 0;
+  margin: 5px 0 0;
 
   color: var(--subtext);
 
@@ -427,13 +465,15 @@ nav a:hover {
 
 .pub-links {
   display: flex;
+  flex-wrap: wrap;
+
   gap: 8px;
 
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .pub-links a {
-  padding: 6px 11px;
+  padding: 6px 12px;
 
   background: var(--surface);
 
@@ -451,8 +491,20 @@ nav a:hover {
 }
 
 .pub-links a:hover {
-  background: var(--surface-soft);
+  background: #f5e5e0;
   border-color: var(--accent-light);
+}
+
+
+/* anonymous / under review */
+
+.under-review {
+  margin: 17px 0 0;
+
+  color: var(--subtext);
+
+  font-size: 12.5px;
+  font-style: italic;
 }
 
 
@@ -598,6 +650,7 @@ nav a:hover {
 
 .education-item .institution {
   color: var(--text);
+
   font-weight: 600;
 }
 
@@ -665,6 +718,7 @@ footer {
   min-height: 115px;
 
   display: flex;
+
   justify-content: space-between;
   align-items: center;
 }
@@ -682,9 +736,9 @@ footer {
 }
 
 
-/* ================= MOBILE ================= */
+/* ================= TABLET ================= */
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
 
   .header-inner {
     padding: 20px 0;
@@ -697,6 +751,7 @@ footer {
 
   nav {
     gap: 13px;
+
     flex-wrap: wrap;
   }
 
@@ -708,8 +763,12 @@ footer {
     padding: 27px;
   }
 
+  .profile-photo,
   .profile-photo img {
     width: 115px;
+  }
+
+  .profile-photo img {
     height: 140px;
   }
 
@@ -721,13 +780,13 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .pub-with-image {
-    grid-template-columns: 180px 1fr;
-  }
 
-  .pub-image {
-    width: 180px;
-    height: 125px;
+  /* publication switches to smaller image */
+
+  .publication {
+    grid-template-columns: minmax(190px, 240px) 1fr;
+
+    gap: 22px;
   }
 
   .project-item,
@@ -746,18 +805,23 @@ footer {
 
     text-align: left;
   }
-
 }
 
 
-@media (max-width: 560px) {
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
 
   .hero {
     grid-template-columns: 1fr;
   }
 
+  .profile-photo,
   .profile-photo img {
     width: 105px;
+  }
+
+  .profile-photo img {
     height: 125px;
   }
 
@@ -765,14 +829,18 @@ footer {
     font-size: 34px;
   }
 
-  .pub-with-image {
+  .publication {
     grid-template-columns: 1fr;
+
+    gap: 18px;
   }
 
   .pub-image {
     width: 100%;
-    max-width: 330px;
-    height: 185px;
+
+    max-width: 420px;
+
+    aspect-ratio: 16 / 10;
   }
 
   .simple-card {
@@ -780,5 +848,4 @@ footer {
 
     gap: 7px;
   }
-
 }
