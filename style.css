@@ -323,7 +323,7 @@ nav a:hover {
 }
 
 
-/* ================= SELECTED RESEARCH ================= */
+/* ================= SELECTED PAPERS ================= */
 
 .selected-research-item {
   display: grid;
@@ -492,7 +492,7 @@ nav a:hover {
 }
 
 
-/* ================= BUTTONS ================= */
+/* ================= PAPER BUTTONS ================= */
 
 .pub-links {
   display: flex;
@@ -527,7 +527,7 @@ nav a:hover {
 }
 
 
-/* ================= FIGURES ================= */
+/* ================= PAPER FIGURES ================= */
 
 .selected-research-figure {
   width: 100%;
@@ -593,6 +593,11 @@ nav a:hover {
   color: var(--subtext);
 
   font-size: 14px;
+}
+
+.simple-card p strong {
+  color: var(--text);
+  font-weight: 700;
 }
 
 .simple-card .secondary {
