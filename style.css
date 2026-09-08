@@ -28,6 +28,7 @@ html {
 
 body {
   margin: 0;
+
   background: var(--bg);
   color: var(--text);
 
@@ -73,12 +74,14 @@ a {
 .logo {
   font-size: 21px;
   font-weight: 750;
+
   letter-spacing: -0.4px;
 }
 
 nav {
   display: flex;
   align-items: center;
+
   gap: 25px;
 }
 
@@ -109,11 +112,14 @@ nav a:hover {
 
 .hero {
   margin-top: 45px;
+
   padding: 40px 44px;
 
   display: grid;
   grid-template-columns: 145px 1fr;
+
   gap: 37px;
+
   align-items: center;
 
   background: var(--surface);
@@ -138,6 +144,7 @@ nav a:hover {
   object-position: center;
 
   border-radius: 14px;
+
   border: 1px solid var(--border);
 
   background: white;
@@ -174,8 +181,9 @@ nav a:hover {
 
 .research-tags {
   display: flex;
-  gap: 8px;
   flex-wrap: wrap;
+
+  gap: 8px;
 
   margin: 17px 0;
 }
@@ -216,7 +224,7 @@ nav a:hover {
 .profile-links a {
   padding: 7px 12px;
 
-  background: #fff;
+  background: #ffffff;
 
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -233,6 +241,7 @@ nav a:hover {
 
 .profile-links a:hover {
   background: var(--surface-soft);
+
   border-color: var(--accent-light);
 }
 
@@ -257,7 +266,7 @@ nav a:hover {
 }
 
 
-/* ================= RESEARCH ================= */
+/* ================= RESEARCH INTERESTS ================= */
 
 .research-grid {
   display: grid;
@@ -310,7 +319,7 @@ nav a:hover {
 }
 
 
-/* ================= SELECTED PAPERS ================= */
+/* ================= SELECTED PAPER CARDS ================= */
 
 .selected-research-item {
   display: grid;
@@ -319,17 +328,36 @@ nav a:hover {
     minmax(0, 1.15fr)
     minmax(300px, 0.85fr);
 
-  gap: 44px;
+  gap: 42px;
 
   align-items: center;
 
-  padding: 34px 0;
+  margin-bottom: 22px;
 
-  border-bottom: 1px solid var(--border);
+  padding: 30px 32px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 24px rgba(78, 60, 40, 0.045);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.selected-research-item:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(78, 60, 40, 0.07);
 }
 
 .selected-research-item:last-of-type {
-  border-bottom: none;
+  margin-bottom: 0;
 }
 
 .selected-research-text {
@@ -337,7 +365,7 @@ nav a:hover {
 }
 
 
-/* ================= YEAR + BK21 ================= */
+/* ================= PAPER META ================= */
 
 .pub-topline {
   display: flex;
@@ -467,6 +495,9 @@ nav a:hover {
   font-size: 11px;
 }
 
+
+/* ================= PAPER LINKS ================= */
+
 .pub-links {
   display: flex;
   flex-wrap: wrap;
@@ -479,7 +510,7 @@ nav a:hover {
 .pub-links a {
   padding: 6px 11px;
 
-  background: var(--surface);
+  background: #ffffff;
 
   border: 1px solid var(--border);
   border-radius: 7px;
@@ -496,6 +527,7 @@ nav a:hover {
 
 .pub-links a:hover {
   background: var(--surface-soft);
+
   border-color: var(--accent-light);
 }
 
@@ -506,12 +538,12 @@ nav a:hover {
   width: 100%;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
-  padding: 10px;
+  padding: 12px;
 
-  background: #ffffff;
+  background: #faf7f2;
 
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -533,7 +565,7 @@ nav a:hover {
 /* ================= UNDER REVIEW ================= */
 
 .under-review-section {
-  margin-top: 34px;
+  margin-top: 30px;
 
   padding: 22px;
 
@@ -559,6 +591,7 @@ nav a:hover {
   padding: 4px 9px;
 
   background: #fdebed;
+
   border: 1px solid #f5c8cf;
   border-radius: 999px;
 
@@ -568,6 +601,7 @@ nav a:hover {
   font-weight: 700;
 
   text-transform: uppercase;
+
   white-space: nowrap;
 }
 
@@ -580,6 +614,7 @@ nav a:hover {
 
 .manuscript-grid {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
 
   gap: 12px;
@@ -619,6 +654,7 @@ nav a:hover {
   color: var(--subtext);
 
   font-size: 12.5px;
+
   line-height: 1.6;
 }
 
@@ -635,12 +671,16 @@ nav a:hover {
   font-style: italic;
 }
 
+
+/* NRF Student Research Grant */
+
 .nrf-badge {
   display: inline-block;
 
   padding: 3px 8px;
 
   background: #eaf6ee;
+
   border: 1px solid #c5e5cf;
   border-radius: 999px;
 
@@ -693,6 +733,7 @@ nav a:hover {
 
 .simple-card p strong {
   color: var(--text);
+
   font-weight: 700;
 }
 
@@ -868,7 +909,6 @@ footer {
   min-height: 115px;
 
   display: flex;
-
   justify-content: space-between;
   align-items: center;
 }
@@ -983,6 +1023,10 @@ footer {
 
   .hero h1 {
     font-size: 34px;
+  }
+
+  .selected-research-item {
+    padding: 23px 20px;
   }
 
   .selected-research-item h3 {
