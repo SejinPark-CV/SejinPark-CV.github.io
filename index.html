@@ -1,150 +1,779 @@
-<section id="publications" class="section container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="section-header">
-    <h2>Selected Research</h2>
-    <p>
-      A brief overview of the research questions, ideas, and outcomes behind my work.
-    </p>
-  </div>
+  <title>Sejin Park</title>
 
-  <!-- ================= IM-LUT ================= -->
+  <meta
+    name="description"
+    content="Sejin Park - Ph.D. Student at Korea University. Research in Efficient AI and Low-level Vision."
+  >
 
-  <article class="research-project">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <div class="research-project-text">
+<body>
 
-      <div class="project-meta">
-        <span class="pub-year">2025</span>
-        <span class="bk21-badge">BK21 FOUR Top Conference</span>
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+    <div class="container header-inner">
+
+      <a class="logo" href="#about">Sejin Park</a>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a class="nav-cv" href="CV_Sejin.pdf" target="_blank">CV</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="hero container">
+
+      <div class="profile-photo">
+        <img src="profile.jpg" alt="Sejin Park">
       </div>
 
-      <h3>
-        IM-LUT: Interpolation Mixing Look-Up Tables for Image Super-Resolution
-      </h3>
+      <div class="hero-content">
 
-      <p class="research-question">
-        Can LUT-based super-resolution support arbitrary scaling factors?
-      </p>
+        <p class="eyebrow">
+          Ph.D. Student · Korea University
+        </p>
 
-      <div class="research-points">
-        <div>
-          <span class="point-label">Idea</span>
+        <h1>Sejin Park</h1>
+
+        <p class="position">
+          Department of Electrical and Computer Engineering<br>
+          Korea University, Seoul, Korea
+        </p>
+
+        <div class="research-tags">
+          <span>Efficient AI</span>
+          <span>Low-level Vision</span>
+        </div>
+
+        <p class="bio">
+          I am a Ph.D. student in Electrical and Computer Engineering at
+          Korea University, advised by Prof. Seung-Won Jung.
+          My research focuses on efficient AI and low-level computer vision,
+          with particular interests in inference-efficient models,
+          data-efficient learning, hardware-aware models,
+          image restoration, and camera ISP.
+        </p>
+
+        <div class="profile-links">
+
+          <a href="mailto:sejin5485@korea.ac.kr">
+            Email
+          </a>
+
+          <a
+            href="https://scholar.google.com/citations?user=ORxvuSYAAAAJ&hl=ko"
+            target="_blank"
+          >
+            Google Scholar
+          </a>
+
+          <a
+            href="https://github.com/SejinPark-CV"
+            target="_blank"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="CV_Sejin.pdf"
+            target="_blank"
+          >
+            CV
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= RESEARCH INTERESTS ================= -->
+
+    <section id="research" class="section container">
+
+      <div class="section-header">
+        <h2>Research Interests</h2>
+        <p>
+          My research spans efficient neural architectures and low-level computer vision.
+        </p>
+      </div>
+
+      <div class="research-grid">
+
+        <article class="research-card">
+
+          <div class="research-index">
+            01
+          </div>
+
+          <h3>Efficient AI</h3>
+
           <p>
-            Learn interpolation mixing weights and convert them into LUTs
-            for efficient arbitrary-scale super-resolution.
+            Inference-efficient models, data-efficient learning,
+            hardware-aware models, and logic-based neural networks.
           </p>
+
+        </article>
+
+
+        <article class="research-card">
+
+          <div class="research-index">
+            02
+          </div>
+
+          <h3>Low-level Vision</h3>
+
+          <p>
+            Image restoration and camera ISP,
+            with an emphasis on computationally efficient image processing.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SELECTED RESEARCH ================= -->
+
+    <section id="publications" class="section container">
+
+      <div class="section-header">
+        <h2>Selected Research</h2>
+
+        <p>
+          Research questions, core ideas, and outcomes behind selected publications.
+        </p>
+      </div>
+
+
+      <!-- ================= IM-LUT ================= -->
+
+      <article class="selected-research-item">
+
+        <div class="selected-research-text">
+
+          <div class="pub-topline">
+            <span class="pub-year">2025</span>
+
+            <span class="bk21-badge">
+              BK21 FOUR Top Conference
+            </span>
+          </div>
+
+          <h3>
+            IM-LUT: Interpolation Mixing Look-Up Tables for Image Super-Resolution
+          </h3>
+
+          <p class="research-question">
+            Can LUT-based super-resolution support arbitrary scaling factors?
+          </p>
+
+          <div class="research-points">
+
+            <div>
+              <span class="point-label">
+                Idea
+              </span>
+
+              <p>
+                Learn interpolation mixing weights and convert them into LUTs
+                for efficient arbitrary-scale super-resolution.
+              </p>
+            </div>
+
+            <div>
+              <span class="point-label">
+                Outcome
+              </span>
+
+              <p>
+                Enables continuous-scale super-resolution while retaining
+                efficient LUT-based inference.
+              </p>
+            </div>
+
+          </div>
+
+          <p class="authors">
+            <strong>Sejin Park</strong>,
+            Sangmin Lee,
+            Kyong Hwan Jin,
+            Seung-Won Jung
+          </p>
+
+          <p class="venue">
+            IEEE/CVF International Conference on Computer Vision
+            <strong>(ICCV 2025)</strong>
+          </p>
+
+          <div class="pub-links">
+
+            <a
+              href="https://openaccess.thecvf.com/content/ICCV2025/papers/Park_IM-LUT_Interpolation_Mixing_Look-Up_Tables_for_Image_Super-Resolution_ICCV_2025_paper.pdf"
+              target="_blank"
+            >
+              Paper
+            </a>
+
+            <a
+              href="https://github.com/SejinPark-CV/IM-LUT"
+              target="_blank"
+            >
+              Code
+            </a>
+
+            <a
+              href="https://youtu.be/v1y9wLx_gOU?si=KIHfEz4I8tDztMhp"
+              target="_blank"
+            >
+              Video
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="selected-research-figure">
+          <img src="imlut.png" alt="IM-LUT overview">
+        </div>
+
+      </article>
+
+
+      <!-- ================= FDCNet ================= -->
+
+      <article class="selected-research-item">
+
+        <div class="selected-research-text">
+
+          <div class="pub-topline">
+            <span class="pub-year">2023</span>
+
+            <span class="bk21-badge">
+              BK21 FOUR Top Conference
+            </span>
+          </div>
+
+          <h3>
+            FDCNet: Feature Drift Compensation Network for Class-Incremental
+            Weakly Supervised Object Localization
+          </h3>
+
+          <p class="research-question">
+            Can weakly supervised localization learn new classes without
+            forgetting previously learned localization knowledge?
+          </p>
+
+          <div class="research-points">
+
+            <div>
+              <span class="point-label">
+                Idea
+              </span>
+
+              <p>
+                Compensate feature drift caused by class-incremental learning
+                to preserve localization capability across sequential tasks.
+              </p>
+            </div>
+
+            <div>
+              <span class="point-label">
+                Outcome
+              </span>
+
+              <p>
+                Maintains localization knowledge while progressively learning
+                new object classes.
+              </p>
+            </div>
+
+          </div>
+
+          <p class="authors">
+            <strong>Sejin Park*</strong>,
+            Taehyung Lee*,
+            Yeejin Lee,
+            Byeongkeun Kang
+          </p>
+
+          <p class="venue">
+            ACM International Conference on Multimedia
+            <strong>(ACM MM 2023)</strong>
+          </p>
+
+          <p class="equal">
+            * Equal contribution
+          </p>
+
+          <div class="pub-links">
+
+            <a
+              href="https://dl.acm.org/doi/abs/10.1145/3581783.3612450"
+              target="_blank"
+            >
+              Paper
+            </a>
+
+            <a
+              href="https://github.com/SejinPark-CV/FDCNet"
+              target="_blank"
+            >
+              Code
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="selected-research-figure">
+          <img src="fdcnet.png" alt="FDCNet overview">
+        </div>
+
+      </article>
+
+
+      <!-- ================= UNDER REVIEW ================= -->
+
+      <div class="under-review-note">
+
+        <span class="under-review-label">
+          Under Review
+        </span>
+
+        <p>
+          Two manuscripts have been submitted and are currently under review.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= BOOK ================= -->
+
+    <section class="section container">
+
+      <div class="section-header">
+        <h2>Book</h2>
+      </div>
+
+      <div class="simple-card">
+
+        <div class="simple-year">
+          2025
         </div>
 
         <div>
-          <span class="point-label">Outcome</span>
+
+          <h3>
+            Introduction to Computer Vision for Future Mobility
+          </h3>
+
           <p>
-            Enables continuous-scale super-resolution while retaining
-            LUT-based inference efficiency.
+            Sejin Park and Seung-Won Jung
           </p>
+
+          <p class="secondary">
+            ISBN: 9791175000766
+          </p>
+
         </div>
+
       </div>
 
-      <p class="authors">
-        <strong>Sejin Park</strong>, Sangmin Lee, Kyong Hwan Jin, Seung-Won Jung
-      </p>
+    </section>
 
-      <p class="venue">
-        IEEE/CVF International Conference on Computer Vision
-        <strong>(ICCV 2025)</strong>
-      </p>
 
-      <div class="pub-links">
-        <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Park_IM-LUT_Interpolation_Mixing_Look-Up_Tables_for_Image_Super-Resolution_ICCV_2025_paper.pdf"
-           target="_blank">Paper</a>
+    <!-- ================= PATENT ================= -->
 
-        <a href="https://github.com/SejinPark-CV/IM-LUT"
-           target="_blank">Code</a>
+    <section class="section container">
 
-        <a href="https://youtu.be/v1y9wLx_gOU?si=KIHfEz4I8tDztMhp"
-           target="_blank">Video</a>
+      <div class="section-header">
+        <h2>Patent Application</h2>
       </div>
 
-    </div>
+      <div class="simple-card">
 
-    <div class="research-project-figure">
-      <img src="imlut.png" alt="IM-LUT overview">
-    </div>
-
-  </article>
-
-
-  <!-- ================= FDCNet ================= -->
-
-  <article class="research-project">
-
-    <div class="research-project-text">
-
-      <div class="project-meta">
-        <span class="pub-year">2023</span>
-        <span class="bk21-badge">BK21 FOUR Top Conference</span>
-      </div>
-
-      <h3>
-        FDCNet: Feature Drift Compensation Network for Class-Incremental
-        Weakly Supervised Object Localization
-      </h3>
-
-      <p class="research-question">
-        Can weakly supervised localization learn new classes without
-        forgetting previously learned localization knowledge?
-      </p>
-
-      <div class="research-points">
-        <div>
-          <span class="point-label">Idea</span>
-          <p>
-            Compensate feature drift caused by class-incremental learning
-            to preserve localization capability across sequential tasks.
-          </p>
+        <div class="simple-year">
+          2025
         </div>
 
         <div>
-          <span class="point-label">Outcome</span>
+
+          <h3>
+            Lookup table-based multi-interpolation hybrid method
+            and device for arbitrary scale image super-resolution
+          </h3>
+
           <p>
-            Maintains localization knowledge while progressively learning
-            new object classes.
+            S. Park and Seung-Won Jung
           </p>
+
+          <p class="secondary">
+            KR Application 10-2025-0104234
+          </p>
+
         </div>
+
       </div>
 
-      <p class="authors">
-        <strong>Sejin Park*</strong>, Taehyung Lee*, Yeejin Lee, Byeongkeun Kang
-      </p>
+    </section>
 
-      <p class="venue">
-        ACM International Conference on Multimedia
-        <strong>(ACM MM 2023)</strong>
-      </p>
 
-      <p class="equal">
-        * Equal contribution
-      </p>
+    <!-- ================= PROJECTS ================= -->
 
-      <div class="pub-links">
-        <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612450"
-           target="_blank">Paper</a>
+    <section id="projects" class="section container">
 
-        <a href="https://github.com/SejinPark-CV/FDCNet"
-           target="_blank">Code</a>
+      <div class="section-header">
+        <h2>Research Projects</h2>
       </div>
+
+      <div class="project-list">
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Sep 2026 – Present
+          </div>
+
+          <div>
+            <h3>
+              AI for Science &amp; Technology
+            </h3>
+
+            <p>
+              National Research Foundation of Korea (NRF)
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Sep 2025 – Present
+          </div>
+
+          <div>
+            <h3>
+              Lightweight LLMs with Logic Gate Networks
+            </h3>
+
+            <p>
+              National Research Foundation of Korea (NRF)
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Mar 2024 – Sep 2025
+          </div>
+
+          <div>
+            <h3>
+              SPAD Camera ISP
+            </h3>
+
+            <p>
+              National Research Foundation of Korea (NRF)
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Jun 2023 – Feb 2024
+          </div>
+
+          <div>
+
+            <h3>
+              Class-Incremental Object Localization via Weakly Supervised Learning
+              and Language Model
+            </h3>
+
+            <p>
+              National Research Foundation of Korea (NRF)
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            May 2022 – Apr 2024
+          </div>
+
+          <div>
+
+            <h3>
+              Development of Smart Total Management System for
+              Small Scale Water Supply Facilities
+            </h3>
+
+            <p>
+              National Research Foundation of Korea (NRF)
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Apr 2020 – Dec 2022
+          </div>
+
+          <div>
+
+            <h3>
+              VR/AR Content Generation System Reflecting User Context
+            </h3>
+
+            <p>
+              Institute for Information &amp; Communications Technology
+              Planning &amp; Evaluation (IITP)
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Apr 2021 – Jun 2022
+          </div>
+
+          <div>
+
+            <h3>
+              AI-based Water Management System
+            </h3>
+
+            <p>
+              National Research Foundation of Korea (NRF)
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Sep 2020 – Nov 2021
+          </div>
+
+          <div>
+
+            <h3>
+              Attention-based Visual Object Tracking System
+            </h3>
+
+            <p>
+              Electronics and Telecommunications Research Institute (ETRI)
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section container">
+
+      <div class="section-header">
+        <h2>Education</h2>
+      </div>
+
+      <div class="education-list">
+
+
+        <article class="education-item">
+
+          <div class="education-date">
+            2024 – Present
+          </div>
+
+          <div>
+
+            <h3>
+              Ph.D. in Electrical and Computer Engineering
+            </h3>
+
+            <p class="institution">
+              Korea University
+            </p>
+
+            <p>
+              Advisor: Prof. Seung-Won Jung
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="education-item">
+
+          <div class="education-date">
+            2018 – 2024
+          </div>
+
+          <div>
+
+            <h3>
+              Integrated B.S. &amp; M.S. in Electrical Engineering
+            </h3>
+
+            <p class="institution">
+              Seoul National University of Science and Technology
+            </p>
+
+            <p>
+              Advisor: Prof. Byeongkeun Kang
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= TEACHING ================= -->
+
+    <section class="section container">
+
+      <div class="section-header">
+        <h2>Teaching</h2>
+      </div>
+
+      <div class="teaching-card">
+
+        <h3>
+          Korea University
+        </h3>
+
+        <div class="course">
+          <span class="course-code">
+            KECE404
+          </span>
+
+          <span>
+            Engineering Design II
+          </span>
+
+          <span class="course-term">
+            Fall 2025
+          </span>
+        </div>
+
+
+        <div class="course">
+          <span class="course-code">
+            KECE403
+          </span>
+
+          <span>
+            Engineering Design I
+          </span>
+
+          <span class="course-term">
+            Spring 2025
+          </span>
+        </div>
+
+
+        <div class="course">
+          <span class="course-code">
+            KECE370
+          </span>
+
+          <span>
+            Digital Signal Processing
+          </span>
+
+          <span class="course-term">
+            Fall 2024
+          </span>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        <strong>Sejin Park</strong>
+        <p>Efficient AI · Low-level Vision</p>
+      </div>
+
+      <p>
+        © 2026 Sejin Park
+      </p>
 
     </div>
 
-    <div class="research-project-figure">
-      <img src="fdcnet.png" alt="FDCNet overview">
-    </div>
+  </footer>
 
-  </article>
-
-
-  <div class="under-review-note">
-    <span>Under Review</span>
-    <p>Two manuscripts have been submitted and are currently under review.</p>
-  </div>
-
-</section>
+</body>
+</html>
