@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sejin Park</title>
+  <meta name="description" content="Personal academic website of Sejin Park">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,152 +12,193 @@
   <div class="container">
 
     <header>
-      <div class="name">Sejin Park</div>
+      <a class="site-name" href="#">Sejin Park</a>
       <nav>
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
         <a href="#research">Research</a>
-        <a href="assets/CV_Sejin.pdf" target="_blank">CV</a>
+        <a href="#education">Education</a>
+        <a href="CV_Sejin.pdf" target="_blank">CV</a>
       </nav>
     </header>
 
-    <section id="about" class="intro">
-      <div class="intro-text">
-        <h1>Sejin Park</h1>
-        <p class="subtitle">
-          Ph.D. Student in Electrical and Computer Engineering<br>
-          Korea University
-        </p>
+    <main>
 
-        <p class="interests">
-          Efficient AI · Low-level Vision
-        </p>
-
-        <p>
-          I am a Ph.D. student in Electrical and Computer Engineering at Korea University,
-          advised by Prof. Seung-Won Jung. My research focuses on efficient AI and
-          low-level computer vision, with particular interests in inference-efficient models,
-          data-efficient learning, hardware-aware models, image restoration, and camera ISP.
-        </p>
-
-        <div class="links">
-          <a href="mailto:sejin5485@korea.ac.kr">Email</a>
-          <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
-          <a href="https://github.com/SejinPark-CV" target="_blank">GitHub</a>
-          <a href="assets/CV_Sejin.pdf" target="_blank">CV</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Research Interests</h2>
-
-      <div class="research-grid">
-        <div>
-          <h3>Efficient AI</h3>
-          <p>Inference-efficient models, Data-efficient learning, Hardware-aware models</p>
+      <section id="about" class="hero">
+        <div class="profile-area">
+          <img src="profile.jpg" alt="Sejin Park" class="profile-img">
         </div>
 
-        <div>
-          <h3>Low-level Vision</h3>
-          <p>Image restoration, Camera ISP</p>
-        </div>
-      </div>
-    </section>
+        <div class="intro">
+          <h1>Sejin Park</h1>
 
-    <section id="publications">
-      <h2>Selected Publications</h2>
-
-      <div class="publication">
-        <div>
-          <h3>IM-LUT: Interpolation Mixing Look-Up Tables for Image Super-Resolution</h3>
-          <p>
-            <strong>Sejin Park</strong>, Sangmin Lee, Kyong Hwan Jin, Seung-Won Jung
+          <p class="position">
+            Ph.D. Student in Electrical and Computer Engineering<br>
+            Korea University
           </p>
-          <p class="venue">ICCV 2025</p>
 
-          <div class="pub-links">
-            <a href="#" target="_blank">Paper</a>
-            <a href="https://github.com/SejinPark-CV/IM-LUT" target="_blank">Code</a>
+          <p class="research-keywords">
+            Efficient AI · Low-level Vision
+          </p>
+
+          <p class="bio">
+            I am a Ph.D. student in Electrical and Computer Engineering at
+            Korea University, advised by Prof. Seung-Won Jung.
+            My research focuses on efficient AI and low-level computer vision,
+            with particular interests in inference-efficient models,
+            data-efficient learning, hardware-aware models, image restoration,
+            and camera ISP.
+          </p>
+
+          <div class="profile-links">
+            <a href="mailto:sejin5485@korea.ac.kr">Email</a>
+            <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+            <a href="https://github.com/SejinPark-CV" target="_blank">GitHub</a>
+            <a href="CV_Sejin.pdf" target="_blank">CV</a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="publication">
-        <div>
-          <h3>FDCNet: Feature Drift Compensation Network for Class-Incremental Weakly Supervised Object Localization</h3>
-          <p>
-            <strong>Sejin Park</strong>, Taehyung Lee, Yeejin Lee, Byeongkeun Kang
-          </p>
-          <p class="venue">ACM Multimedia 2023</p>
+      <section>
+        <h2>Research Interests</h2>
 
-          <div class="pub-links">
-            <a href="#" target="_blank">Paper</a>
-            <a href="https://github.com/SejinPark-CV/FDCNet" target="_blank">Code</a>
+        <div class="interest-grid">
+          <div class="interest-item">
+            <h3>Efficient AI</h3>
+            <p>
+              Inference-efficient models, Data-efficient learning,
+              Hardware-aware models
+            </p>
+          </div>
+
+          <div class="interest-item">
+            <h3>Low-level Vision</h3>
+            <p>
+              Image restoration, Camera ISP
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="research">
-      <h2>Research</h2>
+      <section id="publications">
+        <h2>Selected Publications</h2>
 
-      <div class="research-item">
-        <h3>Efficient Logic-based Neural Networks</h3>
-        <p>
-          Research on efficient neural architectures based on differentiable logic gate networks,
-          with particular interest in scalable and hardware-efficient inference.
-        </p>
-      </div>
+        <div class="publication">
+          <div class="publication-content">
+            <h3>
+              IM-LUT: Interpolation Mixing Look-Up Tables for Image Super-Resolution
+            </h3>
 
-      <div class="research-item">
-        <h3>Efficient Image Restoration</h3>
-        <p>
-          Research on computationally efficient image restoration methods,
-          including LUT-based super-resolution.
-        </p>
-      </div>
+            <p class="authors">
+              <strong>Sejin Park</strong>, Sangmin Lee, Kyong Hwan Jin,
+              Seung-Won Jung
+            </p>
 
-      <div class="research-item">
-        <h3>Computational Camera ISP</h3>
-        <p>
-          Learning-based image signal processing for emerging imaging systems.
-        </p>
-      </div>
-    </section>
+            <p class="venue">
+              IEEE/CVF International Conference on Computer Vision (ICCV), 2025
+            </p>
 
-    <section>
-      <h2>Education</h2>
+            <div class="pub-links">
+              <a href="#" target="_blank">Paper</a>
+              <a href="https://github.com/SejinPark-CV/IM-LUT" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
 
-      <div class="education">
-        <p>
-          <strong>2024 – Present</strong><br>
-          Ph.D. in Electrical and Computer Engineering<br>
-          Korea University<br>
-          Advisor: Prof. Seung-Won Jung
-        </p>
+        <div class="publication">
+          <div class="publication-content">
+            <h3>
+              FDCNet: Feature Drift Compensation Network for Class-Incremental
+              Weakly Supervised Object Localization
+            </h3>
 
-        <p>
-          <strong>2018 – 2024</strong><br>
-          Integrated B.S. & M.S. in Electrical Engineering<br>
-          Seoul National University of Science and Technology<br>
-          Advisor: Prof. Byeongkeun Kang
-        </p>
-      </div>
-    </section>
+            <p class="authors">
+              <strong>Sejin Park</strong>, Taehyung Lee, Yeejin Lee,
+              Byeongkeun Kang
+            </p>
 
-    <section>
-      <h2>Teaching</h2>
-      <p>Korea University</p>
-      <ul>
-        <li>Engineering Design II, Fall 2025</li>
-        <li>Engineering Design I, Spring 2025</li>
-        <li>Digital Signal Processing, Fall 2024</li>
-      </ul>
-    </section>
+            <p class="venue">
+              ACM International Conference on Multimedia (ACM MM), 2023
+            </p>
+
+            <div class="pub-links">
+              <a href="#" target="_blank">Paper</a>
+              <a href="https://github.com/SejinPark-CV/FDCNet" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+
+        <div class="research-item">
+          <h3>Efficient Logic-based Neural Networks</h3>
+          <p>
+            Research on efficient neural architectures based on differentiable
+            logic gate networks, with particular interest in scalable and
+            hardware-efficient inference.
+          </p>
+        </div>
+
+        <div class="research-item">
+          <h3>Efficient Image Restoration</h3>
+          <p>
+            Research on computationally efficient image restoration methods,
+            including LUT-based image super-resolution.
+          </p>
+        </div>
+
+        <div class="research-item">
+          <h3>Computational Camera ISP</h3>
+          <p>
+            Learning-based image signal processing for emerging imaging systems,
+            including camera ISP.
+          </p>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+
+        <div class="education-item">
+          <div class="education-year">2024 – Present</div>
+          <div>
+            <h3>Ph.D. in Electrical and Computer Engineering</h3>
+            <p>
+              Korea University<br>
+              Advisor: Prof. Seung-Won Jung
+            </p>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="education-year">2018 – 2024</div>
+          <div>
+            <h3>Integrated B.S. & M.S. in Electrical Engineering</h3>
+            <p>
+              Seoul National University of Science and Technology<br>
+              Advisor: Prof. Byeongkeun Kang
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Teaching</h2>
+
+        <div class="teaching-item">
+          <h3>Korea University</h3>
+          <p>KECE404, Engineering Design II, Fall 2025</p>
+          <p>KECE403, Engineering Design I, Spring 2025</p>
+          <p>KECE370, Digital Signal Processing, Fall 2024</p>
+        </div>
+      </section>
+
+    </main>
 
     <footer>
-      © 2026 Sejin Park
+      <p>© 2026 Sejin Park</p>
     </footer>
 
   </div>
