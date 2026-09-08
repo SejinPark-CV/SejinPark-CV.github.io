@@ -28,7 +28,6 @@ html {
 
 body {
   margin: 0;
-
   background: var(--bg);
   color: var(--text);
 
@@ -65,7 +64,6 @@ a {
 
 .header-inner {
   min-height: 76px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,10 +83,8 @@ nav {
 
 nav a {
   color: var(--subtext);
-
   font-size: 14px;
   font-weight: 500;
-
   transition: color 0.18s ease;
 }
 
@@ -98,9 +94,7 @@ nav a:hover {
 
 .nav-cv {
   padding: 7px 14px;
-
   background: var(--surface);
-
   border: 1px solid var(--accent-light);
   border-radius: 999px;
 }
@@ -110,20 +104,16 @@ nav a:hover {
 
 .hero {
   margin-top: 45px;
-
   padding: 40px 44px;
 
   display: grid;
   grid-template-columns: 145px 1fr;
   gap: 37px;
-
   align-items: center;
 
   background: var(--surface);
-
   border: 1px solid var(--border);
   border-radius: 20px;
-
   box-shadow: var(--shadow);
 }
 
@@ -133,7 +123,6 @@ nav a:hover {
 
 .profile-photo img {
   display: block;
-
   width: 145px;
   height: 175px;
 
@@ -141,93 +130,75 @@ nav a:hover {
   object-position: center;
 
   border-radius: 14px;
-
   border: 1px solid var(--border);
-
   background: white;
 }
 
 .eyebrow {
   margin: 0 0 4px;
-
   color: var(--accent-dark);
 
   font-size: 11px;
   font-weight: 700;
-
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .hero h1 {
   margin: 0;
-
   font-size: 44px;
   line-height: 1.1;
-
   letter-spacing: -1.2px;
 }
 
 .position {
   margin: 9px 0 0;
-
   color: var(--subtext);
-
   font-size: 15.5px;
 }
 
 .research-tags {
   display: flex;
   gap: 8px;
-
   flex-wrap: wrap;
-
   margin: 17px 0;
 }
 
 .research-tags span {
   padding: 5px 11px;
-
   background: var(--surface-soft);
 
   border: 1px solid var(--accent-light);
   border-radius: 999px;
 
   color: var(--accent-dark);
-
   font-size: 12.5px;
   font-weight: 600;
 }
 
 .bio {
   max-width: 720px;
-
   margin: 0;
 
   color: #514c46;
-
   font-size: 15px;
 }
 
 .profile-links {
   display: flex;
   flex-wrap: wrap;
-
   gap: 8px;
-
   margin-top: 21px;
 }
 
 .profile-links a {
   padding: 7px 12px;
-
   background: #fff;
 
   border: 1px solid var(--border);
   border-radius: 8px;
 
   color: var(--accent-dark);
-
   font-size: 13px;
   font-weight: 600;
 
@@ -257,16 +228,7 @@ nav a:hover {
 
   font-size: 27px;
   line-height: 1.3;
-
   letter-spacing: -0.6px;
-}
-
-.section-header p {
-  margin: 5px 0 0;
-
-  color: var(--subtext);
-
-  font-size: 14px;
 }
 
 
@@ -275,13 +237,11 @@ nav a:hover {
 .research-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   gap: 17px;
 }
 
 .research-card {
   padding: 25px;
-
   background: var(--surface);
 
   border: 1px solid var(--border);
@@ -294,31 +254,25 @@ nav a:hover {
 
 .research-card:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    0 9px 22px rgba(78, 60, 40, 0.05);
+  box-shadow: 0 9px 22px rgba(78, 60, 40, 0.05);
 }
 
 .research-index {
   margin-bottom: 15px;
 
   color: var(--accent);
-
   font-size: 11px;
   font-weight: 750;
 }
 
 .research-card h3 {
   margin: 0 0 7px;
-
   font-size: 19px;
 }
 
 .research-card p {
   margin: 0;
-
   color: var(--subtext);
-
   font-size: 14.5px;
 }
 
@@ -333,11 +287,9 @@ nav a:hover {
     minmax(300px, 0.85fr);
 
   gap: 44px;
-
   align-items: center;
 
   padding: 34px 0;
-
   border-bottom: 1px solid var(--border);
 }
 
@@ -349,33 +301,26 @@ nav a:hover {
   min-width: 0;
 }
 
-
-/* ================= YEAR + BK21 ================= */
-
 .pub-topline {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 
   gap: 15px;
-
   margin-bottom: 9px;
 }
 
 .pub-year {
   color: var(--accent-dark);
-
   font-size: 13px;
   font-weight: 750;
 }
 
 .bk21-badge {
   display: inline-block;
-
   padding: 4px 9px;
 
   background: #fdebed;
-
   border: 1px solid #f5c8cf;
   border-radius: 999px;
 
@@ -383,24 +328,16 @@ nav a:hover {
 
   font-size: 10.5px;
   font-weight: 700;
-
   white-space: nowrap;
 }
-
-
-/* ================= TITLE ================= */
 
 .selected-research-item h3 {
   margin: 0 0 12px;
 
   font-size: 21px;
   line-height: 1.4;
-
   letter-spacing: -0.25px;
 }
-
-
-/* ================= QUESTION ================= */
 
 .research-question {
   margin: 0 0 17px;
@@ -409,44 +346,32 @@ nav a:hover {
 
   font-size: 15.5px;
   font-weight: 650;
-
   line-height: 1.55;
 }
-
-
-/* ================= IDEA + OUTCOME ================= */
 
 .research-points {
   display: flex;
   flex-direction: column;
 
   gap: 10px;
-
   margin-bottom: 18px;
 }
 
 .research-points > div {
   display: grid;
-
   grid-template-columns: 68px 1fr;
-
   gap: 12px;
-
   align-items: start;
 }
 
 .point-label {
-  display: inline-block;
-
   padding-top: 1px;
 
   color: var(--accent-dark);
 
   font-size: 11px;
   font-weight: 750;
-
   text-transform: uppercase;
-
   letter-spacing: 0.04em;
 }
 
@@ -454,20 +379,14 @@ nav a:hover {
   margin: 0;
 
   color: var(--subtext);
-
   font-size: 14px;
-
   line-height: 1.6;
 }
-
-
-/* ================= AUTHORS + VENUE ================= */
 
 .authors {
   margin: 0 0 3px;
 
   color: var(--subtext);
-
   font-size: 13.5px;
 }
 
@@ -479,7 +398,6 @@ nav a:hover {
   margin: 0;
 
   color: var(--subtext);
-
   font-size: 13px;
 }
 
@@ -487,19 +405,14 @@ nav a:hover {
   margin: 4px 0 0;
 
   color: var(--subtext);
-
   font-size: 11px;
 }
-
-
-/* ================= PAPER BUTTONS ================= */
 
 .pub-links {
   display: flex;
   flex-wrap: wrap;
 
   gap: 8px;
-
   margin-top: 13px;
 }
 
@@ -549,7 +462,6 @@ nav a:hover {
 
   width: 100%;
   height: auto;
-
   max-height: 290px;
 
   object-fit: contain;
@@ -557,15 +469,118 @@ nav a:hover {
 }
 
 
+/* ================= UNDER REVIEW ================= */
+
+.under-review-section {
+  margin-top: 32px;
+  padding: 20px 22px;
+
+  background: #fffdfb;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.under-review-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 11px;
+
+  margin-bottom: 12px;
+
+  color: var(--subtext);
+  font-size: 13px;
+}
+
+.under-review-badge {
+  display: inline-block;
+
+  padding: 4px 9px;
+
+  background: #fdebed;
+  border: 1px solid #f5c8cf;
+  border-radius: 999px;
+
+  color: #b84a5a;
+
+  font-size: 10.5px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.manuscript-item {
+  padding: 13px 0;
+
+  border-top: 1px solid var(--border);
+}
+
+.manuscript-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 4px;
+}
+
+.manuscript-name {
+  color: var(--accent-dark);
+
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.manuscript-item p {
+  margin: 0;
+
+  color: var(--subtext);
+  font-size: 13px;
+}
+
+.manuscript-item strong {
+  color: var(--text);
+}
+
+.manuscript-note {
+  margin-top: 3px !important;
+
+  font-size: 10.5px !important;
+  font-style: italic;
+}
+
+
+/* green NRF badge */
+
+.nrf-badge {
+  display: inline-block;
+
+  padding: 4px 9px;
+
+  background: #eaf6ee;
+  border: 1px solid #c5e5cf;
+  border-radius: 999px;
+
+  color: #43815a;
+
+  font-size: 10.5px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
 /* ================= BOOK + PATENT ================= */
 
 .simple-card {
   display: grid;
-
   grid-template-columns: 85px 1fr;
 
   gap: 26px;
-
   padding: 24px;
 
   background: var(--surface);
@@ -576,14 +591,12 @@ nav a:hover {
 
 .simple-year {
   color: var(--accent-dark);
-
   font-size: 14px;
   font-weight: 700;
 }
 
 .simple-card h3 {
   margin: 0 0 6px;
-
   font-size: 17px;
 }
 
@@ -591,7 +604,6 @@ nav a:hover {
   margin: 2px 0;
 
   color: var(--subtext);
-
   font-size: 14px;
 }
 
@@ -618,11 +630,9 @@ nav a:hover {
 
 .project-item {
   display: grid;
-
   grid-template-columns: 175px 1fr;
 
   gap: 27px;
-
   padding: 19px 0;
 
   border-bottom: 1px solid var(--border);
@@ -641,7 +651,6 @@ nav a:hover {
 
 .project-item h3 {
   margin: 0 0 3px;
-
   font-size: 15.5px;
 }
 
@@ -649,7 +658,6 @@ nav a:hover {
   margin: 0;
 
   color: var(--subtext);
-
   font-size: 13px;
 }
 
@@ -667,11 +675,9 @@ nav a:hover {
 
 .education-item {
   display: grid;
-
   grid-template-columns: 175px 1fr;
 
   gap: 27px;
-
   padding: 22px 0;
 
   border-bottom: 1px solid var(--border);
@@ -690,7 +696,6 @@ nav a:hover {
 
 .education-item h3 {
   margin: 0 0 5px;
-
   font-size: 16.5px;
 }
 
@@ -698,13 +703,11 @@ nav a:hover {
   margin: 2px 0;
 
   color: var(--subtext);
-
   font-size: 13.5px;
 }
 
 .education-item .institution {
   color: var(--text);
-
   font-weight: 600;
 }
 
@@ -722,17 +725,14 @@ nav a:hover {
 
 .teaching-card h3 {
   margin: 0 0 14px;
-
   font-size: 16px;
 }
 
 .course {
   display: grid;
-
   grid-template-columns: 90px 1fr 100px;
 
   gap: 18px;
-
   padding: 10px 0;
 
   border-top: 1px solid var(--border);
@@ -753,7 +753,6 @@ nav a:hover {
   color: var(--subtext);
 
   text-align: right;
-
   font-size: 12px;
 }
 
@@ -772,7 +771,6 @@ footer {
   min-height: 115px;
 
   display: flex;
-
   justify-content: space-between;
   align-items: center;
 }
@@ -785,7 +783,6 @@ footer {
   margin: 2px 0;
 
   color: var(--subtext);
-
   font-size: 12px;
 }
 
@@ -805,7 +802,6 @@ footer {
 
   nav {
     gap: 13px;
-
     flex-wrap: wrap;
   }
 
@@ -813,7 +809,6 @@ footer {
     grid-template-columns: 115px 1fr;
 
     gap: 24px;
-
     padding: 27px;
   }
 
@@ -836,7 +831,6 @@ footer {
 
   .selected-research-item {
     grid-template-columns: 1fr;
-
     gap: 24px;
   }
 
@@ -847,7 +841,6 @@ footer {
   .project-item,
   .education-item {
     grid-template-columns: 1fr;
-
     gap: 4px;
   }
 
@@ -857,7 +850,6 @@ footer {
 
   .course-term {
     grid-column: 2;
-
     text-align: left;
   }
 
@@ -891,14 +883,17 @@ footer {
 
   .research-points > div {
     grid-template-columns: 1fr;
-
     gap: 2px;
   }
 
   .simple-card {
     grid-template-columns: 1fr;
-
     gap: 7px;
+  }
+
+  .under-review-header {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
 }
