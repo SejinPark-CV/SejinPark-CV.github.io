@@ -270,11 +270,10 @@ nav a:hover {
 }
 
 
-/* ================= RESEARCH INTERESTS ================= */
+/* ================= RESEARCH ================= */
 
 .research-grid {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
 
   gap: 17px;
@@ -355,7 +354,6 @@ nav a:hover {
 
 .pub-topline {
   display: flex;
-
   align-items: center;
   flex-wrap: wrap;
 
@@ -370,9 +368,6 @@ nav a:hover {
   font-size: 13px;
   font-weight: 750;
 }
-
-
-/* pink / light red badge */
 
 .bk21-badge {
   display: inline-block;
@@ -497,7 +492,7 @@ nav a:hover {
 }
 
 
-/* ================= PAPER BUTTONS ================= */
+/* ================= BUTTONS ================= */
 
 .pub-links {
   display: flex;
@@ -532,13 +527,12 @@ nav a:hover {
 }
 
 
-/* ================= RESEARCH FIGURES ================= */
+/* ================= FIGURES ================= */
 
 .selected-research-figure {
   width: 100%;
 
   display: flex;
-
   justify-content: center;
   align-items: center;
 
@@ -560,52 +554,6 @@ nav a:hover {
 
   object-fit: contain;
   object-position: center;
-}
-
-
-/* ================= UNDER REVIEW ================= */
-
-.under-review-note {
-  margin-top: 24px;
-
-  padding: 14px 16px;
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 12px;
-
-  background: #fff4f5;
-
-  border: 1px solid #f3d5da;
-  border-radius: 12px;
-}
-
-.under-review-label {
-  padding: 3px 8px;
-
-  background: #fde6e9;
-
-  border: 1px solid #f4ccd2;
-  border-radius: 999px;
-
-  color: #b84a5a;
-
-  font-size: 10.5px;
-  font-weight: 700;
-
-  text-transform: uppercase;
-
-  white-space: nowrap;
-}
-
-.under-review-note p {
-  margin: 0;
-
-  color: var(--subtext);
-
-  font-size: 13px;
 }
 
 
@@ -940,13 +888,6 @@ footer {
     grid-template-columns: 1fr;
 
     gap: 2px;
-  }
-
-  .under-review-note {
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 7px;
   }
 
   .simple-card {
