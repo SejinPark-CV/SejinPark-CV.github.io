@@ -3,261 +3,657 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Sejin Park</title>
-  <meta name="description" content="Personal academic website of Sejin Park">
+  <meta name="description"
+        content="Sejin Park - Ph.D. Student at Korea University. Research in Efficient AI and Low-level Vision.">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
 
-    <header class="topbar">
-      <a class="site-name" href="#">Sejin Park</a>
+  <!-- ================= HEADER ================= -->
 
-      <nav class="nav">
+  <header class="header">
+    <div class="container header-inner">
+
+      <a class="logo" href="#about">Sejin Park</a>
+
+      <nav>
         <a href="#about">About</a>
+        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
-        <a href="CV_Sejin.pdf" target="_blank">CV</a>
+        <a class="nav-cv" href="CV_Sejin.pdf" target="_blank">CV</a>
       </nav>
-    </header>
 
-    <main>
+    </div>
+  </header>
 
-      <section id="about" class="hero card">
-        <img src="profile.jpg" alt="Sejin Park" class="profile-img">
 
-        <div class="hero-text">
-          <p class="eyebrow">Ph.D. Student · Korea University</p>
+  <main>
 
-          <h1>Sejin Park</h1>
+    <!-- ================= ABOUT ================= -->
 
-          <p class="position">
-            Ph.D. Student in Electrical and Computer Engineering<br>
-            Korea University
+    <section id="about" class="hero container">
+
+      <div class="profile-photo">
+        <img src="profile.jpg" alt="Sejin Park">
+      </div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          Ph.D. Student · Korea University
+        </p>
+
+        <h1>Sejin Park</h1>
+
+        <p class="position">
+          Department of Electrical and Computer Engineering<br>
+          Korea University, Seoul, Korea
+        </p>
+
+        <div class="research-tags">
+          <span>Efficient AI</span>
+          <span>Low-level Vision</span>
+        </div>
+
+        <p class="bio">
+          I am a Ph.D. student in Electrical and Computer Engineering at
+          Korea University, advised by Prof. Seung-Won Jung.
+          My research focuses on efficient AI and low-level computer vision,
+          with particular interests in inference-efficient models,
+          data-efficient learning, hardware-aware models,
+          image restoration, and camera ISP.
+        </p>
+
+        <div class="profile-links">
+
+          <a href="mailto:sejin5485@korea.ac.kr">
+            Email
+          </a>
+
+          <a href="https://scholar.google.com/citations?user=ORxvuSYAAAAJ&hl=ko"
+             target="_blank">
+            Google Scholar
+          </a>
+
+          <a href="https://github.com/SejinPark-CV"
+             target="_blank">
+            GitHub
+          </a>
+
+          <a href="CV_Sejin.pdf"
+             target="_blank">
+            CV
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= NEWS ================= -->
+
+    <section class="section container">
+
+      <div class="section-header">
+        <h2>News</h2>
+      </div>
+
+      <div class="news-list">
+
+        <div class="news-item">
+          <span class="news-date">Sep 2026</span>
+          <p>
+            Started a new research project on
+            <strong>AI for Science &amp; Technology</strong>.
+          </p>
+        </div>
+
+        <div class="news-item">
+          <span class="news-date">2026</span>
+          <p>
+            Two manuscripts are currently under review.
+          </p>
+        </div>
+
+        <div class="news-item">
+          <span class="news-date">2025</span>
+          <p>
+            Our paper <strong>IM-LUT</strong> was accepted to ICCV 2025.
+          </p>
+        </div>
+
+        <div class="news-item">
+          <span class="news-date">2025</span>
+          <p>
+            Published the book
+            <strong>Introduction to Computer Vision for Future Mobility</strong>.
+          </p>
+        </div>
+
+        <div class="news-item">
+          <span class="news-date">2023</span>
+          <p>
+            Our paper <strong>FDCNet</strong> was accepted to ACM Multimedia 2023.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= RESEARCH ================= -->
+
+    <section id="research" class="section container">
+
+      <div class="section-header">
+        <h2>Research Interests</h2>
+        <p>
+          My research spans efficient neural architectures and low-level computer vision.
+        </p>
+      </div>
+
+      <div class="research-grid">
+
+        <article class="research-card">
+          <div class="research-index">01</div>
+
+          <h3>Efficient AI</h3>
+
+          <p>
+            Inference-efficient models, data-efficient learning,
+            hardware-aware models, and logic-based neural networks.
+          </p>
+        </article>
+
+
+        <article class="research-card">
+          <div class="research-index">02</div>
+
+          <h3>Low-level Vision</h3>
+
+          <p>
+            Image restoration and camera ISP,
+            with an emphasis on computationally efficient image processing.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PUBLICATIONS ================= -->
+
+    <section id="publications" class="section container">
+
+      <div class="section-header">
+        <h2>Selected Publications</h2>
+      </div>
+
+
+      <!-- IM-LUT -->
+
+      <article class="publication">
+
+        <div class="pub-year">
+          2025
+        </div>
+
+        <div class="pub-content">
+
+          <h3>
+            IM-LUT: Interpolation Mixing Look-Up Tables for
+            Image Super-Resolution
+          </h3>
+
+          <p class="authors">
+            <strong>Sejin Park</strong>,
+            Sangmin Lee,
+            Kyong Hwan Jin,
+            Seung-Won Jung
           </p>
 
-          <div class="keyword-row">
-            <span class="tag">Efficient AI</span>
-            <span class="tag">Low-level Vision</span>
+          <div class="venue-line">
+            <span class="venue">
+              IEEE/CVF International Conference on Computer Vision
+              <strong>(ICCV 2025)</strong>
+            </span>
+
+            <span class="bk21-badge">
+              BK21 FOUR Top Conference
+            </span>
           </div>
 
-          <p class="bio">
-            I am a Ph.D. student in Electrical and Computer Engineering at Korea University,
-            advised by Prof. Seung-Won Jung. My research focuses on efficient AI and
-            low-level computer vision, with particular interests in inference-efficient models,
-            data-efficient learning, hardware-aware models, image restoration, and camera ISP.
+          <div class="pub-links">
+
+            <a href="#" target="_blank">
+              Paper
+            </a>
+
+            <a href="https://github.com/SejinPark-CV/IM-LUT"
+               target="_blank">
+              Code
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- FDCNet -->
+
+      <article class="publication">
+
+        <div class="pub-year">
+          2023
+        </div>
+
+        <div class="pub-content">
+
+          <h3>
+            FDCNet: Feature Drift Compensation Network for
+            Class-Incremental Weakly Supervised Object Localization
+          </h3>
+
+          <p class="authors">
+            <strong>Sejin Park*</strong>,
+            Taehyung Lee*,
+            Yeejin Lee,
+            Byeongkeun Kang
           </p>
 
-          <div class="link-row">
-            <a href="mailto:sejin5485@korea.ac.kr">Email</a>
-            <a href="https://scholar.google.com/citations?user=ORxvuSYAAAAJ&hl=ko" target="_blank">Google Scholar</a>
-            <a href="https://github.com/SejinPark-CV" target="_blank">GitHub</a>
-            <a href="CV_Sejin.pdf" target="_blank">CV</a>
-          </div>
-        </div>
-      </section>
+          <div class="venue-line">
 
-      <section class="card">
-        <div class="section-head">
-          <h2>Research Interests</h2>
-        </div>
+            <span class="venue">
+              ACM International Conference on Multimedia
+              <strong>(ACM MM 2023)</strong>
+            </span>
 
-        <div class="interest-grid">
-          <div class="info-box">
-            <h3>Efficient AI</h3>
-            <p>
-              Inference-efficient models, Data-efficient learning,
-              Hardware-aware models
-            </p>
+            <span class="bk21-badge">
+              BK21 FOUR Top Conference
+            </span>
+
           </div>
 
-          <div class="info-box">
-            <h3>Low-level Vision</h3>
-            <p>
-              Image restoration, Camera ISP
-            </p>
+          <p class="equal">
+            * Equal contribution
+          </p>
+
+          <div class="pub-links">
+
+            <a href="#" target="_blank">
+              Paper
+            </a>
+
+            <a href="https://github.com/SejinPark-CV/FDCNet"
+               target="_blank">
+              Code
+            </a>
+
           </div>
-        </div>
-      </section>
 
-      <section id="publications" class="card">
-        <div class="section-head">
-          <h2>Selected Publications</h2>
         </div>
 
-        <div class="pub-item">
-          <div class="pub-text">
-            <h3>
-              IM-LUT: Interpolation Mixing Look-Up Tables for Image Super-Resolution
-            </h3>
+      </article>
 
-            <p class="authors">
-              <strong>Sejin Park</strong>, Sangmin Lee, Kyong Hwan Jin, Seung-Won Jung
-            </p>
+    </section>
 
-            <p class="venue">
-              IEEE/CVF International Conference on Computer Vision (ICCV), 2025
-            </p>
 
-            <div class="button-row">
-              <a class="btn" href="#" target="_blank">Paper</a>
-              <a class="btn" href="https://github.com/SejinPark-CV/IM-LUT" target="_blank">Code</a>
-            </div>
+    <!-- ================= BOOK ================= -->
+
+    <section class="section container">
+
+      <div class="section-header">
+        <h2>Book</h2>
+      </div>
+
+      <div class="simple-card">
+
+        <div class="simple-year">
+          2025
+        </div>
+
+        <div>
+          <h3>
+            Introduction to Computer Vision for Future Mobility
+          </h3>
+
+          <p>
+            Sejin Park and Seung-Won Jung
+          </p>
+
+          <p class="secondary">
+            ISBN: 9791175000766
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PATENT ================= -->
+
+    <section class="section container">
+
+      <div class="section-header">
+        <h2>Patent Application</h2>
+      </div>
+
+      <div class="simple-card">
+
+        <div class="simple-year">
+          2025
+        </div>
+
+        <div>
+
+          <h3>
+            Lookup table-based multi-interpolation hybrid method
+            and device for arbitrary scale image super-resolution
+          </h3>
+
+          <p>
+            S. Park and Seung-Won Jung
+          </p>
+
+          <p class="secondary">
+            KR Application 10-2025-0104234
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section container">
+
+      <div class="section-header">
+        <h2>Research Projects</h2>
+      </div>
+
+      <div class="project-list">
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Sep 2026 – Present
           </div>
-        </div>
 
-        <div class="pub-item">
-          <div class="pub-text">
-            <h3>
-              FDCNet: Feature Drift Compensation Network for Class-Incremental
-              Weakly Supervised Object Localization
-            </h3>
-
-            <p class="authors">
-              <strong>Sejin Park</strong>, Taehyung Lee, Yeejin Lee, Byeongkeun Kang
-            </p>
-
-            <p class="venue">
-              ACM International Conference on Multimedia (ACM MM), 2023
-            </p>
-
-            <div class="button-row">
-              <a class="btn" href="#" target="_blank">Paper</a>
-              <a class="btn" href="https://github.com/SejinPark-CV/FDCNet" target="_blank">Code</a>
-            </div>
+          <div>
+            <h3>AI for Science &amp; Technology</h3>
+            <p>National Research Foundation of Korea (NRF)</p>
           </div>
-        </div>
-      </section>
 
-      <section id="projects" class="card">
-        <div class="section-head">
-          <h2>Research Projects</h2>
-        </div>
+        </article>
 
-        <div class="project-item">
-          <div class="project-period">Sep 2026 – Present</div>
-          <div class="project-content">
-            <h3>AI for Science & Technology</h3>
-            <p class="project-org">National Research Foundation of Korea (NRF)</p>
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Sep 2025 – Present
           </div>
-        </div>
 
-        <div class="project-item">
-          <div class="project-period">Sep 2025 – Present</div>
-          <div class="project-content">
+          <div>
             <h3>Lightweight LLMs with Logic Gate Networks</h3>
-            <p class="project-org">National Research Foundation of Korea (NRF)</p>
+            <p>National Research Foundation of Korea (NRF)</p>
           </div>
-        </div>
 
-        <div class="project-item">
-          <div class="project-period">Mar 2024 – Sep 2025</div>
-          <div class="project-content">
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Mar 2024 – Sep 2025
+          </div>
+
+          <div>
             <h3>SPAD Camera ISP</h3>
-            <p class="project-org">National Research Foundation of Korea (NRF)</p>
+            <p>National Research Foundation of Korea (NRF)</p>
           </div>
-        </div>
 
-        <div class="project-item">
-          <div class="project-period">Jun 2023 – Feb 2024</div>
-          <div class="project-content">
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Jun 2023 – Feb 2024
+          </div>
+
+          <div>
             <h3>
-              Class-Incremental Object Localization via Weakly Supervised Learning and Language Model
+              Class-Incremental Object Localization via
+              Weakly Supervised Learning and Language Model
             </h3>
-            <p class="project-org">National Research Foundation of Korea (NRF)</p>
-          </div>
-        </div>
 
-        <div class="project-item">
-          <div class="project-period">May 2022 – Apr 2024</div>
-          <div class="project-content">
-            <h3>
-              Development of Smart Total Management System for Small Scale Water Supply Facilities
-            </h3>
-            <p class="project-org">National Research Foundation of Korea (NRF)</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-period">Apr 2020 – Dec 2022</div>
-          <div class="project-content">
-            <h3>VR/AR Content Generation System Reflecting User Context</h3>
-            <p class="project-org">
-              Institute for Information &amp; Communications Technology Planning &amp; Evaluation (IITP)
+            <p>
+              National Research Foundation of Korea (NRF)
             </p>
           </div>
-        </div>
 
-        <div class="project-item">
-          <div class="project-period">Apr 2021 – Jun 2022</div>
-          <div class="project-content">
-            <h3>AI-based Water Management System</h3>
-            <p class="project-org">National Research Foundation of Korea (NRF)</p>
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            May 2022 – Apr 2024
           </div>
-        </div>
 
-        <div class="project-item">
-          <div class="project-period">Sep 2020 – Nov 2021</div>
-          <div class="project-content">
-            <h3>Attention-based Visual Object Tracking System</h3>
-            <p class="project-org">
+          <div>
+            <h3>
+              Development of Smart Total Management System for
+              Small Scale Water Supply Facilities
+            </h3>
+
+            <p>
+              National Research Foundation of Korea (NRF)
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Apr 2020 – Dec 2022
+          </div>
+
+          <div>
+            <h3>
+              VR/AR Content Generation System Reflecting User Context
+            </h3>
+
+            <p>
+              Institute for Information &amp; Communications Technology
+              Planning &amp; Evaluation (IITP)
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Apr 2021 – Jun 2022
+          </div>
+
+          <div>
+            <h3>
+              AI-based Water Management System
+            </h3>
+
+            <p>
+              National Research Foundation of Korea (NRF)
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="project-item">
+
+          <div class="project-date">
+            Sep 2020 – Nov 2021
+          </div>
+
+          <div>
+            <h3>
+              Attention-based Visual Object Tracking System
+            </h3>
+
+            <p>
               Electronics and Telecommunications Research Institute (ETRI)
             </p>
           </div>
-        </div>
-      </section>
 
-      <section id="education" class="card">
-        <div class="section-head">
-          <h2>Education</h2>
-        </div>
+        </article>
 
-        <div class="timeline-item">
-          <div class="time">2024 – Present</div>
+      </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section container">
+
+      <div class="section-header">
+        <h2>Education</h2>
+      </div>
+
+      <div class="education-list">
+
+
+        <article class="education-item">
+
+          <div class="education-date">
+            2024 – Present
+          </div>
 
           <div>
-            <h3>Ph.D. in Electrical and Computer Engineering</h3>
+
+            <h3>
+              Ph.D. in Electrical and Computer Engineering
+            </h3>
+
+            <p class="institution">
+              Korea University
+            </p>
+
             <p>
-              Korea University<br>
               Advisor: Prof. Seung-Won Jung
             </p>
-          </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="time">2018 – 2024</div>
+          </div>
+
+        </article>
+
+
+        <article class="education-item">
+
+          <div class="education-date">
+            2018 – 2024
+          </div>
 
           <div>
-            <h3>Integrated B.S. &amp; M.S. in Electrical Engineering</h3>
+
+            <h3>
+              Integrated B.S. &amp; M.S. in Electrical Engineering
+            </h3>
+
+            <p class="institution">
+              Seoul National University of Science and Technology
+            </p>
+
             <p>
-              Seoul National University of Science and Technology<br>
               Advisor: Prof. Byeongkeun Kang
             </p>
+
           </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= TEACHING ================= -->
+
+    <section class="section container">
+
+      <div class="section-header">
+        <h2>Teaching</h2>
+      </div>
+
+      <div class="teaching-card">
+
+        <h3>Korea University</h3>
+
+        <div class="course">
+          <span class="course-code">KECE404</span>
+          <span>Engineering Design II</span>
+          <span class="course-term">Fall 2025</span>
         </div>
-      </section>
 
-      <section class="card">
-        <div class="section-head">
-          <h2>Teaching</h2>
+        <div class="course">
+          <span class="course-code">KECE403</span>
+          <span>Engineering Design I</span>
+          <span class="course-term">Spring 2025</span>
         </div>
 
-        <div class="info-box">
-          <h3>Korea University</h3>
-          <p>KECE404, Engineering Design II, Fall 2025</p>
-          <p>KECE403, Engineering Design I, Spring 2025</p>
-          <p>KECE370, Digital Signal Processing, Fall 2024</p>
+        <div class="course">
+          <span class="course-code">KECE370</span>
+          <span>Digital Signal Processing</span>
+          <span class="course-term">Fall 2024</span>
         </div>
-      </section>
 
-    </main>
+      </div>
 
-    <footer class="footer">
-      <p>© 2026 Sejin Park</p>
-    </footer>
+    </section>
 
-  </div>
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        <strong>Sejin Park</strong>
+        <p>Efficient AI · Low-level Vision</p>
+      </div>
+
+      <p>
+        © 2026 Sejin Park
+      </p>
+
+    </div>
+
+  </footer>
+
 </body>
 </html>
