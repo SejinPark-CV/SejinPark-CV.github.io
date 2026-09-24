@@ -365,17 +365,6 @@ nav a:hover {
 }
 
 
-/* Text-only paper */
-
-.selected-research-item--text-only {
-  grid-template-columns: 1fr;
-}
-
-.selected-research-item--text-only .selected-research-text {
-  max-width: 830px;
-}
-
-
 /* ================= PAPER META ================= */
 
 .pub-topline {
@@ -455,13 +444,9 @@ nav a:hover {
   align-items: start;
 }
 
-
-/* Motivation / Observation / Idea / Outcome */
-
 .research-points--detailed > div {
   grid-template-columns: 92px 1fr;
 }
-
 
 .point-label {
   padding-top: 1px;
