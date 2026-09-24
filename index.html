@@ -187,7 +187,7 @@
 
 
           <p class="research-question">
-            Can logic gate networks scale effectively with increasing width?
+            Can logic gate networks scale effectively with width?
           </p>
 
 
@@ -200,9 +200,21 @@
               </span>
 
               <p>
-                Scaling model capacity is fundamental to modern neural networks,
-                but how logic gate networks behave under width scaling remains
-                largely unexplored.
+                Understand how logic gate networks behave as model width increases.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <span class="point-label">
+                Metric
+              </span>
+
+              <p>
+                Measure kernel diversity using function-aware tree edit distance
+                based on Boolean gate behavior.
               </p>
 
             </div>
@@ -215,9 +227,8 @@
               </span>
 
               <p>
-                Naively increasing width introduces redundant logic kernels,
-                leading to inefficient capacity utilization and performance saturation,
-                with redundancy being most pronounced at the first gate level.
+                Naive width scaling increases kernel redundancy,
+                especially at the first gate level.
               </p>
 
             </div>
@@ -230,9 +241,8 @@
               </span>
 
               <p>
-                Introduce Dynamic Logic Kernel (DLK) for input-dependent Boolean
-                kernel-group routing, and Early-stage Dynamic Logic Kernel (EDLK)
-                to concentrate dynamic routing at the first gate level.
+                Use DLK for input-dependent kernel routing and EDLK
+                to dynamically route only first-level gate groups.
               </p>
 
             </div>
@@ -245,9 +255,7 @@
               </span>
 
               <p>
-                Improves kernel diversity and capacity utilization,
-                enabling more effective width scaling with higher accuracy
-                and improved parameter efficiency.
+                Improves kernel diversity and enables more effective width scaling.
               </p>
 
             </div>
