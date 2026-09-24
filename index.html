@@ -174,8 +174,8 @@
               2026
             </span>
 
-            <span class="neurips-badge">
-              NeurIPS 2026
+            <span class="bk21-badge">
+              BK21 FOUR Top Conference
             </span>
 
           </div>
@@ -187,12 +187,41 @@
 
 
           <p class="research-question">
-            Can logic gate networks benefit from width scaling
-            without introducing redundant kernels?
+            Can logic gate networks scale effectively with increasing width?
           </p>
 
 
-          <div class="research-points">
+          <div class="research-points research-points--detailed">
+
+            <div>
+
+              <span class="point-label">
+                Motivation
+              </span>
+
+              <p>
+                Scaling model capacity is fundamental to modern neural networks,
+                but how logic gate networks behave under width scaling remains
+                largely unexplored.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <span class="point-label">
+                Observation
+              </span>
+
+              <p>
+                Naively increasing width introduces redundant logic kernels,
+                leading to inefficient capacity utilization and performance saturation,
+                with redundancy being most pronounced at the first gate level.
+              </p>
+
+            </div>
+
 
             <div>
 
@@ -201,9 +230,9 @@
               </span>
 
               <p>
-                Introduce Dynamic Logic Kernel (DLK) and Early-stage Dynamic
-                Logic Kernel (EDLK) to improve kernel utilization through
-                input-dependent routing.
+                Introduce Dynamic Logic Kernel (DLK) for input-dependent Boolean
+                kernel-group routing, and Early-stage Dynamic Logic Kernel (EDLK)
+                to concentrate dynamic routing at the first gate level.
               </p>
 
             </div>
@@ -216,9 +245,9 @@
               </span>
 
               <p>
-                Improves kernel diversity and model-capacity utilization,
-                enabling more effective width scaling with improved
-                parameter efficiency.
+                Improves kernel diversity and capacity utilization,
+                enabling more effective width scaling with higher accuracy
+                and improved parameter efficiency.
               </p>
 
             </div>
