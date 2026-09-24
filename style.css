@@ -365,7 +365,7 @@ nav a:hover {
 }
 
 
-/* Text-only paper card */
+/* Text-only paper */
 
 .selected-research-item--text-only {
   grid-template-columns: 1fr;
@@ -414,27 +414,6 @@ nav a:hover {
 }
 
 
-/* NeurIPS */
-
-.neurips-badge {
-  display: inline-block;
-
-  padding: 4px 9px;
-
-  background: #eef3ff;
-
-  border: 1px solid #ccd9f6;
-  border-radius: 999px;
-
-  color: #48639a;
-
-  font-size: 10.5px;
-  font-weight: 700;
-
-  white-space: nowrap;
-}
-
-
 /* ================= PAPER TEXT ================= */
 
 .selected-research-item h3 {
@@ -475,6 +454,14 @@ nav a:hover {
 
   align-items: start;
 }
+
+
+/* Motivation / Observation / Idea / Outcome */
+
+.research-points--detailed > div {
+  grid-template-columns: 92px 1fr;
+}
+
 
 .point-label {
   padding-top: 1px;
@@ -1065,7 +1052,8 @@ footer {
     font-size: 18px;
   }
 
-  .research-points > div {
+  .research-points > div,
+  .research-points--detailed > div {
     grid-template-columns: 1fr;
 
     gap: 2px;
